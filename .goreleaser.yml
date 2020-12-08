@@ -22,6 +22,7 @@ builds:
       - linux
     goarch:
       - amd64
+      - arm64
     main: ./cmd/cfssl
     ldflags:
       - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
@@ -94,6 +95,7 @@ builds:
       - linux
     goarch:
       - amd64
+      - arm64
     main: ./cmd/cfssl-certinfo
     ldflags:
       - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
@@ -202,6 +204,7 @@ builds:
       - linux
     goarch:
       - amd64
+      - arm64
     main: ./cmd/cfssljson
     ldflags:
       - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
